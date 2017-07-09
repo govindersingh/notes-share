@@ -11,105 +11,106 @@
   <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="assets/image/icon-check.png"/>
 
-  <style>
-  html,body
-  {
-      width: 100%;
-      height: 100%;
-      margin: 0px;
-      padding: 0px;
-  }
-  body
-  {
-    padding-top: 50px;
-    overflow-x: hidden;
-    background-color: #ccc;
-  }
-  .navbar-form
-  {
-      margin: 0px -15px 0px -15px;
-      padding-top: 0px;
-      padding-bottom: 0px;
-      border: 0px
-  }
-  .container-fluid
-  {
-    background-color: #5a2f2f;
-    width: 100%;
-  }
-  .button-search
-  {
-    text-align: right;
-    margin-top: 8px;
-  }
 
-  .navbar-form .brand a.navbar-brand
-  {
-    color:#f7ebeb;
-    font-size:27px;
-  }
-  #home .home-image
-  {
-    width: 100%;
-    height: 260px;
-  }
-  #home
-  {
-    position: relative;
-  }
-  #home .container
-  {
-    position:absolute;
-    width: 100%;
-    top: 45px;
-  }
-  #home h1
-  {
-    font-family: 'Russo One', sans-serif;
-    height: 100px;
-    font-size: 80px;
-    text-align: center;
-    color: rgba(4, 1, 2, 0.7)
-  }
+<style>
 
-  #option-navbar .container, .nav
-  {
-    width: 100%;
-    height: 100%;
-  }
-  #option-navbar li
-  {
-    height: 100%;
-  }
-  #option-navbar a
-  {
-    color: #9391b3;
-  }
-  #option-navbar
-  {
-    background-color: #5a2f2f;
-    height: 8%;
-  }
-  #table-1 .panel-heading, #table-2 .panel-heading, #table-3 .panel-heading
-  {
-    font-size: 32px;
-  }
-  #table-1 .container, #table-2 .container, #table-3 .container
-  {
-    width: 85%;
-  }
-  section
-  {
+html,body
+{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+body
+{
+  padding-top: 50px;
+  overflow-x: hidden;
+  background-color: #ccc;
+}
+.navbar-form
+{
+  margin: 0px -15px 0px -15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: 0px
 
-  }
+}
 
-  </style>
+.container-fluid
+{
+  background-color: #5a2f2f;
+  width: 100%;
+}
+.button-search
+{
+  text-align: right;
+  margin-top: 8px;
+}
+
+.navbar-form .brand a.navbar-brand
+{
+  color:#f7ebeb;
+  font-size:27px;
+}
+#home .home-image
+{
+  width: 100%;
+  height: 260px;
+}
+#home
+{
+  position: relative;
+}
+#home .container
+{
+  position:absolute;
+  width: 100%;
+  top: 45px;
+}
+#home h1
+{
+  font-family: 'Russo One', sans-serif;
+  height: 100px;
+  font-size: 80px;
+  text-align: center;
+  color: rgba(4, 1, 2, 0.7)
+}
+
+#option-navbar .container, .nav
+{
+  width: 100%;
+  height: 100%;
+}
+#option-navbar li
+{
+  height: 100%;
+}
+#option-navbar a
+{
+  color: #9391b3;
+}
+#option-navbar
+{
+  background-color: #5a2f2f;
+  height: 8%;
+}
+#table-1 .panel-heading, #table-2 .panel-heading, #table-3 .panel-heading
+{
+  font-size: 32px;
+}
+#table-1 .container, #table-2 .container, #table-3 .container
+{
+  width: 85%;
+}
+
+
+</style>
 </head>
 <body>
   <form class="navbar-form navbae-left navbar-fixed-top" role="search">
     <div class="container-fluid">
       <div class="brand">
-      <a class="navbar-brand" href="#home">NotesShare</a>
+        <a class="navbar-brand" href="#home">NotesShare</a>
       </div>
       <div class="button-search">
         <div class="form-group">
@@ -117,137 +118,139 @@
         </div>
         <button type="submit" class="btn btn-primary">Search</button>
       </div>
-      </div>
-      </form>
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Upload</button>
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Share your notes</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default">Submit</button>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+
+    <div class="upload-button">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Upload</button>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Share your notes</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default">Submit</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </form>
 
 
-
-<section id="home">
+  <section id="home">
     <img class="home-image" src="https://static.pexels.com/photos/267586/pexels-photo-267586.jpeg">
     <div class="container">
       <div class="row">
         <h1>share study succeed</h1>
       </div>
     </div>
-</section>
+  </section>
 
-<div id="option-navbar">
-  <div class="container">
-  <ul class="nav nav-pills">
-    <li class="active"><a href="#">Home</a></li>
-    <li class="dropdown">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Engineering<span class="caret"></span></a>
-      <ul class="dropdown-menu">
-        <li><a href="#">B.tech</a></li>
-        <li><a href="#">M.tech</a></li>
+  <div id="option-navbar">
+    <div class="container">
+      <ul class="nav nav-pills">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Engineering<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">B.tech</a></li>
+            <li><a href="#">M.tech</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Art</a></li>
+        <li><a href="#">Science</a></li>
+        <li><a href="#">Mathamatices</a></li>
       </ul>
-    </li>
-    <li><a href="#">Art</a></li>
-    <li><a href="#">Science</a></li>
-    <li><a href="#">Mathamatices</a></li>
-  </ul>
-</div>
-</div>
+    </div>
+  </div>
 
-<section id="table-1">
-  <div class="container">
-    <div class="row">
-<div class="panel panel-default">
-  <!-- Default panel contents -->
-  <div class="panel-heading text-center">Study Materials</div>
-  <!--<div class="panel-body">
-    <p></p>
-  </div>-->
-  <!-- Table -->
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Notes</th>
-        <th>Subject</th>
-        <th>Download</th>
-        <th>like</th>
-        <th>Share</th>
-      </tr>
-    </thead>
-  </table>
-</div>
-</div>
-</div>
+  <section id="table-1">
+    <div class="container">
+      <div class="row">
+        <div class="panel panel-default">
+          <!-- Default panel contents -->
+          <div class="panel-heading text-center">Study Materials</div>
+          <!--<div class="panel-body">
+          <p></p>
+        </div>-->
+        <!-- Table -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Notes</th>
+              <th>Subject</th>
+              <th>Download</th>
+              <th>like</th>
+              <th>Share</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="table-2">
   <div class="container">
     <div class="row">
-<div class="panel panel-default">
-  <!-- Default panel contents -->
-  <div class="panel-heading text-center">Project Reports</div>
-  <!--<div class="panel-body">
-    <p></p>
-  </div>-->
-  <!-- Table -->
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Notes</th>
-        <th>Subject</th>
-        <th>Download</th>
-        <th>like</th>
-        <th>Share</th>
-      </tr>
-    </thead>
-  </table>
-</div>
-</div>
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading text-center">Project Reports</div>
+        <!--<div class="panel-body">
+        <p></p>
+      </div>-->
+      <!-- Table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Notes</th>
+            <th>Subject</th>
+            <th>Download</th>
+            <th>like</th>
+            <th>Share</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
 </div>
 </section>
 
 <section id="table-3">
   <div class="container">
     <div class="row">
-<div class="panel panel-default">
-  <!-- Default panel contents -->
-  <div class="panel-heading text-center">Previeus Question</div>
-  <!--<div class="panel-body">
-    <p></p>
-  </div>-->
-  <!-- Table -->
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Notes</th>
-        <th>Subject</th>
-        <th>Download</th>
-        <th>like</th>
-        <th>Share</th>
-      </tr>
-    </thead>
-  </table>
-</div>
-</div>
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading text-center">Previeus Question</div>
+        <!--<div class="panel-body">
+        <p></p>
+      </div>-->
+      <!-- Table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Notes</th>
+            <th>Subject</th>
+            <th>Download</th>
+            <th>like</th>
+            <th>Share</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
 </div>
 </section>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="assets/js/bootstrap.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
 </body>
 </html>
